@@ -1,0 +1,153 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"uglifyFileName": false
+	},
+	"appid": "wx0f33cccb3a63d664",
+	"projectname": "%E7%BD%91%E4%B8%8A%E8%AF%84%E6%95%99%E7%B3%BB%E7%BB%9F",
+	"libVersion": "2.6.4",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 18,
+			"list": [
+				{
+					"id": 0,
+					"name": "登录",
+					"pathName": "pages/login/main",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "学生首页",
+					"pathName": "pages/student/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "学生详细信息",
+					"pathName": "pages/studentPersonInfoDetail/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "学生成绩",
+					"pathName": "pages/studentPersonAchievement/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "教师列表",
+					"pathName": "pages/teacherList/main",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "教师列表-详情",
+					"pathName": "pages/teacherInfoDetail/main",
+					"query": "id=XH6MhuSiwXKAQq-K&tId=t001"
+				},
+				{
+					"id": 6,
+					"name": "评教列表",
+					"pathName": "pages/evaluationList/main",
+					"query": "type=teacher"
+				},
+				{
+					"id": 7,
+					"name": "评教详情",
+					"pathName": "pages/evaluationList/evaluationTeacherList/evaluationDetail/main",
+					"query": ""
+				},
+				{
+					"id": 8,
+					"name": "管理员首页",
+					"pathName": "pages/admin/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "学生列表",
+					"pathName": "pages/studentList/main",
+					"query": ""
+				},
+				{
+					"id": 10,
+					"name": "评教-教师列表",
+					"pathName": "pages/evaluationList/evaluationTeacherList/main",
+					"query": "id=XH6MhuSiwXKAQq-K"
+				},
+				{
+					"id": -1,
+					"name": "教师首页",
+					"pathName": "pages/teacher/main",
+					"query": ""
+				},
+				{
+					"id": 12,
+					"name": "评教列表",
+					"pathName": "pages/evaluationList/evaluationTeacherInfo/main",
+					"query": "id=XH6MhuSiwXKAQq-K"
+				},
+				{
+					"id": -1,
+					"name": "管理员首页",
+					"pathName": "pages/admin/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布评教",
+					"pathName": "pages/publish/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "添加学生",
+					"pathName": "pages/addStudent/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "添加教师",
+					"pathName": "pages/addTeacher/main",
+					"query": ""
+				},
+				{
+					"id": 17,
+					"name": "管理员-修改学生",
+					"pathName": "pages/upDateStudent/main",
+					"query": "id=NZ605320"
+				},
+				{
+					"id": 18,
+					"name": "管理员-修改教师",
+					"pathName": "pages/upDateTeacher/main",
+					"query": "id=T881709"
+				}
+			]
+		}
+	}
+}

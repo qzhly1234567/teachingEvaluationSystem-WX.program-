@@ -1,0 +1,10 @@
+<view class="cont">
+    <view class="panel" wx:for="{{studentList}}" wx:key="{{index}}" data-id="{{item.stNumber}}" bindtap="setUp">
+        <image src="{{item.avatar}}"></image>
+        <div class="info">
+            <text>{{item.nickName}} {{item.stNumber}}</text>
+            <text>{{options.name}}</text>
+        </div>
+        <image class="more" src="/static/images/setUp.png" alt=""></image>
+    </view>
+</view>

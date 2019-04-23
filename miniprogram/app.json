@@ -1,0 +1,38 @@
+{
+  "pages": [
+        "pages/login/main",
+    "pages/admin/main",
+    "pages/studentList/main",
+    "pages/studentPersonAchievement/main",
+    "pages/teacherList/main",
+    "pages/teacherInfoDetail/main",
+    "pages/addStudent/main",
+    "pages/addTeacher/main",
+    "pages/upDateTeacher/main",
+    "pages/upDateStudent/main",
+    "pages/adminEvaluationList/main",
+    "pages/adminEvaluationList/evaluationTeacherList/main",
+    "pages/adminEvaluationList/evaluationTeacherList/studentList/main",
+    "pages/evaluationList/main",
+    "pages/evaluationList/evaluationTeacherList/main",
+    "pages/evaluationList/evaluationTeacherInfo/main",
+    "pages/evaluationList/evaluationTeacherList/evaluationDetail/main",
+    "pages/publish/main",
+
+    "pages/student/studentIndex/main",
+    "pages/student/studentPerson/main",
+    "pages/student/main",
+    "pages/teacher/teacherIndex/main",
+    "pages/teacher/teacherPerson/main",
+    "pages/teacherPersonInfoDetail/main",
+    "pages/teacher/main",
+    "pages/studentPersonInfoDetail/main"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0086F1",
+    "navigationBarTitleText": "网上评教系统",
+    "navigationBarTextStyle": "white"
+  }
+}

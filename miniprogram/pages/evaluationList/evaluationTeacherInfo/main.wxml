@@ -1,0 +1,44 @@
+<view class="cont">
+    <view class="studentInfo">
+        <image src="{{teacheInfo.avatar}}"></image>
+        <view class="info">
+            <text>{{teacheInfo.nickName}}</text>
+            <text>{{teacheInfo.position}}</text>
+        </view>
+    </view>
+    <view class="info">
+        <view  class="panel" wx:if="{{evaluationForm[0].code==''}}">
+        <view class='panel_title'>
+        暂无人评教
+        </view>
+        </view>
+
+        <view class="panel" wx:if="{{evaluationForm[0].code!=''}}">
+            <view class="item">
+                <view class="title">
+                    描述
+                </view>
+                <view class="code">
+                    得分
+                </view>
+            </view>
+            <view class="item" wx:for="{{evaluationForm}}" wx:key="{{index}}">
+                <view class="title">
+                    {{index+1}}、{{item.name}}
+                </view>
+                <view class="code">
+                    {{item.code}}分
+                </view>
+            </view>
+        </view>
+        <view class="panel" wx:if="{{evaluationForm[0].code!=''}}">
+            <view class="panel_title">
+                教学建议
+            </view>
+            <view class="suggestItem">
+                <view wx:for="{{evaluationForm}}" wx:key="{{index}}">● {{item.info}}</view>
+            </view>
+        </view>
+
+    </view>
+</view>

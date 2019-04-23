@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "CSCard":"../../components/ClassScheduleCard/main",
+    "Nav":"../../components/Nav/main",
+    "adminPerson":"./adminPerson/main",
+    "adminIndex":"./adminIndex/main"
+  }
+}

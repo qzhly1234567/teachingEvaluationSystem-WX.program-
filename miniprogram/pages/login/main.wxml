@@ -1,0 +1,43 @@
+<!--miniprogram/pages/login.wxml-->
+
+
+<view id="main">
+    <view class="admin">
+        <text>欢迎登录后台管理系统</text>
+        <view class="inputField">
+            <input type="text" bindinput="admin" data-type="number" placeholder="请输入管理员账号"/>
+            <input type="password" bindinput="admin" data-type="password" placeholder="请输入管理员密码"/>
+            <button bindtap="admin" data-type="signIn">登录</button>
+        </view>
+
+
+    </view>
+    <view class="user {{pageActive==false?'active':''}}">
+        <image bindtap="pageTab" class="sys" src="/static/images/sys.png"></image>
+
+        <image src="https://6261-base--9a2dfb-1258700457.tcb.qcloud.la/logo.png?sign=ee09b21bc2eeb3646a44a5bb27ed09ba&t=1551589639"></image>
+        <view class="btn">
+            <view class="inputField">
+                <input type="text" bindinput="user" placeholder-class="inputClass" value="" data-type="number" placeholder="{{type[0].state?'请输入教师账号':'请输入学号'}}"/>
+                <input type="password" bindinput="user" placeholder-class="inputClass" value="" data-type="password" placeholder="请输入密码"/>
+            </view>
+            <radio-group class="radio-group" bindchange="loginType">
+                <label class="radio" wx:for="{{type}}">
+                    <radio value="{{index}}" color="#0086F1" checked="{{item.state}}"/>
+                    {{item.name}}
+                </label>
+            </radio-group>
+            <!--<button class="onTap"-->
+            <!--data-type="teacher"-->
+            <!--bindgetuserinfo="onGetUserInfo"-->
+            <!--open-type="getUserInfo"-->
+            <!--&gt;教师登录-->
+            <!--</button>-->
+            <button class="onTap"
+                    data-type="signIn"
+                    bindtap="user"
+            >登录
+            </button>
+        </view>
+    </view>
+</view>

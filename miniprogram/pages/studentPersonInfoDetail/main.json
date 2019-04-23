@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "CSCard":"../../components/ClassScheduleCard/main",
+    "Nav":"../../components/Nav/main"
+  },
+  "component": true
+}

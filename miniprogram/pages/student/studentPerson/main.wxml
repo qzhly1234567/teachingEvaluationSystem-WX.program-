@@ -1,0 +1,23 @@
+<view class="cont">
+    <view class="studentInfo">
+        <image src="{{userInfoData.avatar}}"></image>
+        <view class="info">
+            <text>{{userInfoData.nickName}} {{userInfoData.stNumber}}</text>
+            <text wx:for="{{class}}" wx:key="{{index}}" wx:if="{{userInfoData.classId==item.cId}}">{{item.name}}</text>
+        </view>
+    </view>
+
+    <view class="btn">
+        <view class="panel onTap" bindtap="to" data-path="/pages/studentPersonInfoDetail/main">
+            <view class="panel_title">
+                个人详细信息
+            </view>
+        </view>
+
+        <view class="panel onTap err" bindtap="quit">
+            <view class="panel_title">
+                退出登录
+            </view>
+        </view>
+    </view>
+</view>

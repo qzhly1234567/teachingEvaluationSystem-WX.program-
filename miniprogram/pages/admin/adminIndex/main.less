@@ -1,0 +1,115 @@
+@import "../../app";
+@import "../../app";
+
+page{
+  width: 100%;
+  height: 100%;
+  .cont{
+    width: 100%;
+    height: 100%;
+    background: @themeColor3;
+    box-sizing: border-box;
+    .adminTab{
+      height: 100rpx;
+      background: @themeColor;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: relative;
+      .item{
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        font-size: 30rpx;
+        color: @themeColor2;
+        line-height: 100rpx;
+        transition: 0.3s;
+
+      }
+      .active{
+        color: #fff;
+      }
+      .now{
+        position: absolute;
+        bottom: 0;
+        background: @themeColor3;
+        width: 10%;
+        height: 10rpx;
+        border-radius: 10rpx 10rpx 0 0;
+        left: 20%;
+        transition: 0.3s;
+      }
+      .nowActive{
+        left: 70%;
+      }
+    }
+    .classList{
+      padding: 20rpx 30rpx;
+      background: @themeColor3;
+      .panel{
+        .panel_title{
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0;
+          .classn{
+
+          }
+          .info{
+            display: flex;
+            align-items: center;
+            text{
+              font-size: 30rpx;
+              color: @themeColor;
+              margin-right: 10rpx;
+            }
+            image{
+              width: 30rpx;
+              height: 30rpx;
+            }
+          }
+        }
+      }
+    }
+    .teacherList{
+      padding: 20rpx 30rpx;
+      background: @themeColor3;
+      .panel{
+        .panel_title{
+          position: relative;
+          display: flex;
+          align-items: center;
+          padding: 0;
+          position: relative;
+          >image{
+            width: 80rpx;
+            height: 80rpx;
+            border-radius: 50%;
+            margin-right: 20rpx;
+          }
+          .classn{
+
+          }
+          .info{
+            position: absolute;
+            right: 0rpx;
+            display: flex;
+            align-items: center;
+            text{
+              font-size: 30rpx;
+              color: @themeColor;
+              margin-right: 10rpx;
+            }
+            image{
+              width: 40rpx;
+              height: 40rpx;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

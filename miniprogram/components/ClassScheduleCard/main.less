@@ -1,0 +1,49 @@
+@import "../../app.less";
+
+.classScheduleCard{
+  background: #fff;
+  border-radius: 20rpx;
+  padding:30rpx 15rpx;
+  .title{
+    font-size: 30rpx;
+    color: @themeColor;
+  }
+  .form{
+    display: flex;
+    width: 100%;
+    .column{
+      border-right: 1px solid #eee;
+      flex: 1;
+      .cell_title{
+        font-size: 28rpx;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70rpx;
+        color: @themeColor;
+      }
+      .cell{
+        text-align: center;
+        font-size: 24rpx;
+        height: 60rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      }
+      view{
+        border-bottom: 1px solid #eee;
+      }
+      .cell:last-child{
+        border: none;
+
+      }
+    }
+    .column:last-child{
+      border: none;
+
+    }
+
+  }
+}

@@ -1,0 +1,38 @@
+<view class="cont">
+    <view class="panel">
+        <view class="item">
+            <picker mode="date" bindchange="changeEndTime"><view>评教截止时间</view></picker>
+            <text class="key">评教截止时间</text>
+            <text class="value">{{date}}</text>
+        </view>
+        <view class="item">
+            <text class="key">评教班级</text>
+        </view>
+        <view class="list">
+            <checkbox-group bindchange="checkboxChange">
+                <label class="changeClass" wx:for="{{class}}" wx:ke="{{index}}">
+                    <checkbox value="{{item.cId}}"  color="#0086F1" />
+                    {{item.name}}
+                </label>
+            </checkbox-group>
+        </view>
+        <view class="item">
+            <text class="key">被评教教师</text>
+        </view>
+        <view class="list">
+            <checkbox-group bindchange="checkboxTeacher">
+                <label class="changeClass" wx:for="{{teaches}}" wx:ke="{{index}}">
+                    <checkbox value="{{item.number}}"  color="#0086F1" />
+                    <image src="{{item.avatar}}"></image>
+                        {{item.nickName}} {{item.position}}
+                </label>
+            </checkbox-group>
+        </view>
+    </view>
+    <view class="panel success onTap" bindtap="submit">
+        <view class="panel_title">
+            发布
+        </view>
+
+    </view>
+</view>

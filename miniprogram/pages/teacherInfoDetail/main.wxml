@@ -1,0 +1,33 @@
+<view class="cont">
+    <view class="studentInfo">
+        <image src="{{teacheDetail.avatar}}"></image>
+        <view class="info">
+            <text>{{teacheDetail.nickName}}</text>
+            <text>{{teacheDetail.position?teacheDetail.position:''}}</text>
+        </view>
+    </view>
+    <view class="info">
+        <view class="panel">
+            <view class="item">
+                <text class="key">姓名</text>
+                <text>{{teacheDetail.nickName}}</text>
+            </view>
+            <view class="item">
+                <text class="key">年龄</text>
+                <text class="value">{{teacheDetail.age?teacheDetail.age:''}}岁</text>
+            </view>
+            <view class="item">
+                <text class="key">性别</text>
+                <text class="value">{{teacheDetail.sex?teacheDetail.sex:''}}</text>
+            </view>
+            <view class="item">
+                <text class="key">职位</text>
+                <text class="value">{{teacheDetail.position?teacheDetail.position:''}}</text>
+            </view>
+        </view>
+
+    </view>
+
+
+
+</view>

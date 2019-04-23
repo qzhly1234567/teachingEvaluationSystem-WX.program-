@@ -1,0 +1,110 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.panel {
+  background: #fff;
+  padding: 25rpx;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  transition: 0.2s;
+}
+.panel .panel_title {
+  color: #0086F1;
+  font-size: 28rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.panel:first-child {
+  margin-top: 0px;
+}
+.err {
+  background: #fb6155;
+  text-align: center;
+}
+.err .panel_title {
+  color: #fff;
+}
+.success {
+  background: #228e33;
+  text-align: center;
+}
+.success .panel_title {
+  color: #fff;
+}
+.onTap:active {
+  transform: scale(0.95);
+}
+page {
+  width: 100%;
+  height: 100%;
+}
+page .cont {
+  width: 100%;
+  height: 100%;
+  background: #f0f2f5;
+  box-sizing: border-box;
+}
+page .cont .studentInfo {
+  width: 100%;
+  height: 280rpx;
+  background: #0086F1;
+  margin-bottom: 20rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+page .cont .studentInfo image {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  margin-right: 30rpx;
+}
+page .cont .studentInfo .info text {
+  display: block;
+  font-size: 36rpx;
+  color: #fff;
+  line-height: 1;
+}
+page .cont .studentInfo .info text:last-child {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+}
+page .cont > .info {
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+page .cont > .info .panel {
+  margin-top: 0px;
+}
+page .cont > .info .panel .item {
+  display: flex;
+  padding: 20rpx 0;
+  font-size: 30rpx;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  border-bottom: 1px solid #f0f2f5;
+}
+page .cont > .info .panel .item .key {
+  color: #0086F1;
+  position: absolute;
+  left: 0;
+}
+page .cont > .info .panel .item .value {
+  color: #8BBBE1;
+  margin-right: 20rpx;
+  text-align: right;
+}
+page .cont > .info .panel .item image {
+  width: 30rpx;
+  height: 30rpx;
+}
+page .cont > .info .panel .item:last-child {
+  border: none;
+}

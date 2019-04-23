@@ -1,0 +1,11 @@
+<view class="cont">
+    <view class="panel" wx:for="{{teachersList}}" wx:key="{{index}}" bindtap="to"  data-path="/pages/evaluationList/evaluationTeacherList/evaluationDetail/main?id={{evaluationOfTeachingData._id}}&tId={{item.number}}&type={{item.state}}">
+        <image src="{{item.avatar}}"></image>
+        <div class="info">
+            <text>请对{{item.nickName}} {{item.position}}进行评教</text>
+            <text class="noEvaluation" wx:if="{{!item.state}}">未评教</text>
+            <text class="alreadyEvaluation" wx:if="{{item.state}}">已评教</text>
+        </div>
+        <image class="more" src="/static/images/right.png" alt=""></image>
+    </view>
+</view>

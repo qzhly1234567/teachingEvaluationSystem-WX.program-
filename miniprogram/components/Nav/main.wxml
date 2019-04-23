@@ -1,0 +1,23 @@
+<view class="nav">
+    <view class="student" wx:if="{{type==1}}">
+        <view class="item {{navActive==1?'active':''}}" bindtap="tab" data-id="1">
+            <image src="/static/images/index{{navActive==1?'_active':''}}.png"></image>
+            <view>
+                首页
+            </view>
+
+        </view>
+        <view class="item {{navActive==2?'active':''}}" bindtap="tab"  data-id="2">
+            <image src="/static/images/me{{navActive==2?'_active':''}}.png"></image>
+            <view>
+                个人中心
+            </view>
+        </view>
+    </view>
+    <view class="teacher" wx:if="{{type==2}}">
+
+    </view>
+    <view class="administrators"  wx:if="{{type==3}}">
+
+    </view>
+</view>

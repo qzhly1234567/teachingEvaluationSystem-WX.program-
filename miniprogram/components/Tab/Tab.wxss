@@ -1,0 +1,175 @@
+/*
+==========================
+文本溢出
+==========================
+*/
+.text-overflow-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-overflow-2 {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /** 对象作为伸缩盒子模型显示 **/
+  -webkit-box-orient: vertical;
+  /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+  -ms-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  /** 显示的行数 **/
+  -ms-line-clamp: 2;
+  /** 显示的行数 **/
+  overflow: hidden;
+  /** 隐藏超出的内容 **/
+}
+.text-overflow-3 {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  -ms-line-clamp: 3;
+  overflow: hidden;
+}
+.text-overflow-4 {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.text-overflow-5 {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+.text-overflow-6 {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+}
+/*
+==========================
+居中
+==========================
+*/
+.centerCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.centerWidth {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@font-face {
+  font-family: 'iconfont';
+  /* project id 599539 */
+  src: url('//at.alicdn.com/t/font_599539_no94v5tgi3.eot');
+  src: url('//at.alicdn.com/t/font_599539_no94v5tgi3.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_599539_no94v5tgi3.woff2') format('woff2'), url('//at.alicdn.com/t/font_599539_no94v5tgi3.woff') format('woff'), url('//at.alicdn.com/t/font_599539_no94v5tgi3.ttf') format('truetype'), url('//at.alicdn.com/t/font_599539_no94v5tgi3.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 60rpx;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*本项目使用的18个图标 */
+.icon-zhiding:before {
+  content: '\e739';
+}
+.icon-zuojiantou:before {
+  content: '\e736';
+}
+.icon-youjiantou:before {
+  content: '\e735';
+}
+.icon-shangjiantou:before {
+  content: '\e734';
+}
+.icon-xiajiantou1:before {
+  content: '\e733';
+}
+.icon-xiajiantou:before {
+  content: '\e6cc';
+}
+.icon-gengduotianchong:before {
+  content: '\e67f';
+}
+.icon-erweima:before {
+  content: '\e65f';
+}
+.icon-fenleiorguangchangorqita:before {
+  content: '\e64f';
+}
+.icon-dibiao:before {
+  content: '\e64d';
+}
+.icon-bangzhu:before {
+  content: '\e64a';
+}
+.icon-xinfeng:before {
+  content: '\e640';
+}
+.icon-duihuaxinxi:before {
+  content: '\e639';
+}
+.icon-sousuo:before {
+  content: '\e62f';
+}
+.icon-shouye:before {
+  content: '\e62d';
+}
+.icon-shezhi:before {
+  content: '\e62a';
+}
+.icon-shanchu:before {
+  content: '\e629';
+}
+.icon-dianhua:before {
+  content: '\e61b';
+}
+/**pages/index.wxss**/
+/**基础风格样式**/
+page {
+  min-height: 100%;
+}
+.Tab {
+  background: #2991D6;
+  height: 100rpx;
+}
+.Tab swiper {
+  height: 100%;
+}
+.Tab swiper swiper-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.Tab swiper swiper-item i-icon {
+  margin-right: 10rpx;
+}
+.Tab swiper swiper-item text {
+  color: #fff;
+  font-size: 30rpx;
+}

@@ -1,0 +1,93 @@
+@import "../../../../app";
+
+page{
+  width: 100%;
+  height: 100%;
+  background: @themeColor3;
+
+  .cont{
+    width: 100%;
+    height: 100%;
+    background: @themeColor3;
+    box-sizing: border-box;
+    .studentInfo{
+      width: 100%;
+      height: 280rpx;
+      background: @themeColor;
+      margin-bottom: 20rpx;
+      display: flex;
+      align-items: center;
+      padding: 0 30rpx;
+      box-sizing: border-box;
+      image{
+        width: 160rpx;
+        height: 160rpx;
+        border-radius: 50%;
+        margin-right: 30rpx;
+      }
+      .info{
+        text{
+          display: block;
+          font-size: 36rpx;
+          color: #fff;
+          line-height: 1;
+        }
+        text:last-child{
+          margin-top: 20rpx;
+          font-size: 28rpx;
+        }
+      }
+    }
+    >.info{
+      width: 100%;
+      padding: 0 30rpx;
+      box-sizing: border-box;
+      .panel{
+        .panel_title{
+          color: #666;
+        }
+        .msg{
+          font-size: 26rpx;
+          color: #999;
+          padding-left:50rpx;
+        }
+        .item{
+          padding: 20rpx 0;
+          font-size: 30rpx;
+          border-bottom:1px solid @themeColor3;
+          .title{
+            display: block;
+            margin-bottom: 20rpx;
+            color: #666;
+          }
+          .option{
+            .radio-group{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              label{
+                color: #999;
+              }
+            }
+
+          }
+
+        }
+        .item:last-child{
+          border: none;
+
+        }
+      }
+      .success{
+        margin-bottom: 30rpx;
+        .panel_title{
+          color: #fff;
+        }
+      }
+
+    }
+
+  }
+}
+
+

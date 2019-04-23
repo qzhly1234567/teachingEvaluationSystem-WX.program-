@@ -1,0 +1,77 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.panel {
+  background: #fff;
+  padding: 25rpx;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  transition: 0.2s;
+}
+.panel .panel_title {
+  color: #0086F1;
+  font-size: 28rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.panel:first-child {
+  margin-top: 0px;
+}
+.err {
+  background: #fb6155;
+  text-align: center;
+}
+.err .panel_title {
+  color: #fff;
+}
+.success {
+  background: #228e33;
+  text-align: center;
+}
+.success .panel_title {
+  color: #fff;
+}
+.onTap:active {
+  transform: scale(0.95);
+}
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 120rpx;
+  background: #0086F1;
+}
+.nav > view {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav > view .item {
+  width: 100rpx;
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav > view .item image {
+  width: 70rpx;
+  height: 70rpx;
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+.nav > view .item view {
+  font-size: 22rpx;
+  color: rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+}
+.nav > view .active image {
+  transform: scale(1);
+}
+.nav > view .active view {
+  color: #ffffff;
+}

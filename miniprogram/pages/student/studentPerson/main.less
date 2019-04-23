@@ -1,0 +1,43 @@
+@import "../../app";
+
+page{
+  width: 100%;
+  height: 100%;
+  .cont{
+    width: 100%;
+    height: 100%;
+    background: @themeColor3;
+    box-sizing: border-box;
+    .studentInfo{
+      width: 100%;
+      height: 280rpx;
+      background: @themeColor;
+      display: flex;
+      align-items: center;
+      padding: 0 30rpx;
+      box-sizing: border-box;
+      image{
+        width: 160rpx;
+        height: 160rpx;
+        border-radius: 50%;
+        margin-right: 30rpx;
+      }
+      .info{
+        text{
+          display: block;
+          font-size: 36rpx;
+          color: #fff;
+          line-height: 1;
+        }
+        text:last-child{
+          margin-top: 20rpx;
+          font-size: 28rpx;
+        }
+      }
+    }
+    .btn{
+      padding: 0 30rpx;
+    }
+  }
+}
+

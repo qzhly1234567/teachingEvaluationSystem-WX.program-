@@ -1,0 +1,34 @@
+<view class="cont">
+    <view class="adminTab">
+        <view wx:for="{{adminTab}}" wx:key="{{index}}" bindtap="changeAdminTab" data-id="{{index}}"
+              class="item {{item.state?'active':''}}">
+            {{item.name}}
+        </view>
+        <view class="now {{adminTab[0].state?'':'nowActive'}}"></view>
+    </view>
+    <!--学生管理-->
+    <view class="classList" wx:if="{{adminTab[0].state}}">
+        <view class="panel" wx:for="{{class}}" wx:key="{{index}}" bindtap="to" data-path="/pages/studentList/main?id={{item.cId}}&name={{item.name}}">
+            <view class="panel_title">
+                <view class="classn">{{item.name}}</view>
+                <view class="info">
+                    <text>{{item.length}}人</text>
+                    <image class="more" src="/static/images/right.png" alt=""></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!--教师管理-->
+    <view class="teacherList" wx:if="{{adminTab[1].state}}">
+        <view class="panel" wx:for="{{teachesList}}" wx:key="{{index}}" data-id="{{item.number}}" bindtap="setUp">
+            <view class="panel_title">
+                <image src="{{item.avatar}}" alt=""></image>
+                <view class="classn">{{item.nickName}} {{item.position}}</view>
+                <view class="info">
+                    <image class="more" src="/static/images/setUp.png" alt=""></image>
+                </view>
+            </view>
+        </view>
+    </view>
+
+</view>

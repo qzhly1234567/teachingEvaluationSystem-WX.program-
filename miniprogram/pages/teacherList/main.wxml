@@ -1,0 +1,15 @@
+
+
+
+
+<view class="cont">
+    <view class="panel" wx:for="{{teaches}}" wx:key="{{index}}" bindtap="to" data-number="{{item.number}}">
+        <image src="{{item.avatar}}"></image>
+
+        <div class="info">
+            <text>{{item.nickName}}</text>
+            <text>{{item.position}}</text>
+        </div>
+        <image class="more" src="/static/images/right.png" alt=""></image>
+    </view>
+</view>

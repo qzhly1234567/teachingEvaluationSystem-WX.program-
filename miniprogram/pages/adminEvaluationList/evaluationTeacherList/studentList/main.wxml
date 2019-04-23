@@ -1,0 +1,9 @@
+<view class="cont">
+    <view class="panel" wx:for="{{studentsList}}" wx:key="{{index}}">
+        <image src="{{item.avatar}}"></image>
+        <div class="info">
+            <text>{{item.nickName}} {{item.stNumber}}</text>
+            <text style="color:{{item.state?'green':'red'}};">{{item.state?'已评教':'未评教'}}</text>
+        </div>
+    </view>
+</view>

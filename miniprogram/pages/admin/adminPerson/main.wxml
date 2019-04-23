@@ -1,0 +1,28 @@
+<view class="cont">
+    <view class="panel onTap">
+        <view class="panel_title" bindtap="to" data-path="/pages/adminEvaluationList/main">
+            评教列表
+        </view>
+    </view>
+    <view class="panel onTap">
+        <view class="panel_title" bindtap="to" data-path="/pages/publish/main">
+            发布评教
+        </view>
+    </view>
+    <view class="panel onTap" bindtap="to" data-path="/pages/addStudent/main">
+        <view class="panel_title">
+            添加学生
+        </view>
+    </view>
+
+    <view class="panel onTap" bindtap="to" data-path="/pages/addTeacher/main">
+        <view class="panel_title">
+            添加教师
+        </view>
+    </view>
+    <view class="panel err onTap" bindtap="quit" >
+        <view class="panel_title">
+            退出登录
+        </view>
+    </view>
+</view>

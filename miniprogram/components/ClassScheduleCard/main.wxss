@@ -1,0 +1,83 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.panel {
+  background: #fff;
+  padding: 25rpx;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  transition: 0.2s;
+}
+.panel .panel_title {
+  color: #0086F1;
+  font-size: 28rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.panel:first-child {
+  margin-top: 0px;
+}
+.err {
+  background: #fb6155;
+  text-align: center;
+}
+.err .panel_title {
+  color: #fff;
+}
+.success {
+  background: #228e33;
+  text-align: center;
+}
+.success .panel_title {
+  color: #fff;
+}
+.onTap:active {
+  transform: scale(0.95);
+}
+.classScheduleCard {
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 30rpx 15rpx;
+}
+.classScheduleCard .title {
+  font-size: 30rpx;
+  color: #0086F1;
+}
+.classScheduleCard .form {
+  display: flex;
+  width: 100%;
+}
+.classScheduleCard .form .column {
+  border-right: 1px solid #eee;
+  flex: 1;
+}
+.classScheduleCard .form .column .cell_title {
+  font-size: 28rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70rpx;
+  color: #0086F1;
+}
+.classScheduleCard .form .column .cell {
+  text-align: center;
+  font-size: 24rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.classScheduleCard .form .column view {
+  border-bottom: 1px solid #eee;
+}
+.classScheduleCard .form .column .cell:last-child {
+  border: none;
+}
+.classScheduleCard .form .column:last-child {
+  border: none;
+}

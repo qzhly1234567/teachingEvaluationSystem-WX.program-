@@ -1,0 +1,18 @@
+<view class="classScheduleCard">
+    <view class="title">{{curriculumSchedule.name}}课程表</view>
+    <view class="form">
+        <view wx:key="{{index}}" wx:for="{{curriculumSchedule.form}}" class="column">
+            <view class="cell_title">
+                {{item.week}}
+            </view>
+            <view wx:key="{{index}}" wx:for="{{item.name}}" class="cell">
+                {{item}}
+            </view>
+        </view>
+    </view>
+</view>
+
+
+
+
+

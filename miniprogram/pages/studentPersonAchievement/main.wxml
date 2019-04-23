@@ -1,0 +1,13 @@
+<view class="cont">
+    <view class="panel">
+        <view class="item" wx:for="{{achievementList.form}}" wx:key="{{index}}">
+            <text class="key">{{item.name}}</text>
+            <text class="value">{{item.score}}</text>
+
+        </view>
+        <view wx:if="{{!achievementList}}">
+        暂无成绩
+        </view>
+
+    </view>
+</view>

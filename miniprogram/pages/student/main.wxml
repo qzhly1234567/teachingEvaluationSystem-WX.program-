@@ -1,0 +1,12 @@
+
+<view class="cont2">
+    <view class="c {{tabNow==1?'active':''}}">
+        <studentIndex></studentIndex>
+    </view>
+    <view class="c {{tabNow==2?'active':''}}">
+        <studentPerson></studentPerson>
+    </view>
+
+</view>
+
+<Nav bind:myEvent="tab" navActive="{{tabNow}}"></Nav>

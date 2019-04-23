@@ -1,0 +1,83 @@
+@import "../../app";
+@import "../../app";
+
+page{
+  width: 100%;
+  height: 100%;
+  .cont{
+    width: 100%;
+    height: 100%;
+    background: @themeColor3;
+    box-sizing: border-box;
+    .studentInfo{
+      width: 100%;
+      height: 280rpx;
+      background: @themeColor;
+      margin-bottom: 20rpx;
+      display: flex;
+      align-items: center;
+      padding: 0 30rpx;
+      box-sizing: border-box;
+      image{
+        width: 160rpx;
+        height: 160rpx;
+        border-radius: 50%;
+        margin-right: 30rpx;
+      }
+      .info{
+        text{
+          display: block;
+          font-size: 36rpx;
+          color: #fff;
+          line-height: 1;
+        }
+        text:last-child{
+          margin-top: 20rpx;
+          font-size: 28rpx;
+        }
+      }
+    }
+    >.info{
+      width: 100%;
+      padding: 0 30rpx;
+      box-sizing: border-box;
+      .panel{
+        margin-top: 0px;
+
+        .item{
+          display: flex;
+          padding: 20rpx 0;
+          font-size: 30rpx;
+          align-items: center;
+          justify-content: flex-end;
+          position: relative;
+          border-bottom:1px solid @themeColor3;
+          .key{
+            color: @themeColor;
+            position: absolute;
+            left: 0;
+          }
+          .value{
+            color: @themeColor2;
+            margin-right: 20rpx;
+            text-align: right;
+          }
+          image{
+            width: 30rpx;
+            height: 30rpx;
+
+          }
+
+        }
+        .item:last-child{
+          border: none;
+
+        }
+      }
+
+    }
+
+  }
+}
+
+

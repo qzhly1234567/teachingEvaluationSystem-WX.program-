@@ -1,0 +1,149 @@
+@import "../../app";
+
+page {
+  height: 100%;
+  #main {
+    height: 100%;
+
+    .admin {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: @themeColor;
+      padding-right: 20%;
+      box-sizing: border-box;
+
+
+      text{
+        font-size:40rpx;
+        padding-top: 150rpx;
+        display: block;
+        text-align: center;
+
+        color: #fff;
+      }
+      .inputField{
+        position:absolute;
+        bottom: 200rpx;
+        display: block;
+        width: 100%;
+        padding-right: 20%;
+        box-sizing: border-box;
+        input{
+          display: block;
+          margin: auto;
+          width: 360rpx;
+          height: 75rpx;
+          background: #fff;
+          color:@themeColor;
+          border-radius: 10rpx;
+          margin-bottom: 20rpx;
+          font-size: 25rpx;
+          padding: 0 20rpx;
+          box-sizing: border-box;
+
+        }
+        input::-webkit-input-placeholder {
+           color: @themeColor2;
+
+        }
+        button{
+          width: 360rpx;
+          height: 75rpx;
+          border-radius: 10rpx;
+          margin-bottom: 20rpx;
+          font-size: 25rpx;
+
+          text-align: center;
+          color: @themeColor;
+          line-height: 75rpx;
+        }
+
+      }
+
+    }
+
+    .user {
+      height: 100%;
+      padding-top: 150rpx;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9;
+      box-sizing: border-box;
+      background: @themeColor3;
+      transition: 0.3s;
+      image {
+        width: 180rpx;
+        height: 180rpx;
+        display: block;
+        margin:  auto;
+      }
+      .sys{
+        position: absolute;
+        top: 30rpx;
+        left: 30rpx;
+        width: 80rpx;
+        height: 80rpx;
+        opacity: 0.8;
+      }
+      .btn{
+        position: absolute;
+        width: 100%;
+        bottom: 150rpx;
+        .inputField {
+          bottom: 200 rpx;
+          width: 100%;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20rpx;
+          input{
+            display: block;
+            margin: auto;
+            width: 450rpx;
+            height: 75rpx;
+            background: #fff;
+            color: @themeColor;
+            border-radius: 10rpx;
+            margin-bottom: 20rpx;
+            font-size: 25rpx;
+            padding: 0 20rpx;
+            box-sizing: border-box;
+          }
+          .inputClass{
+            color: @themeColor2;
+            font-size: 30rpx;
+          }
+        }
+        radio-group{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          label{
+            font-size: 30rpx;
+            margin-right: 20rpx;
+          }
+          radio{
+
+          }
+        }
+        button{
+          width: 450rpx;
+          display: block;
+          margin: 20rpx auto 0;
+          background: @themeColor;
+          border: none;
+          color: #fff;
+        }
+      }
+    }
+    .active{
+      background: #eee;
+      transform: translateX(70%)  scale(0.8);
+    }
+  }
+}

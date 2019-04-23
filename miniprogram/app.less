@@ -1,0 +1,49 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+@themeColor:#0086F1;
+@themeColor2:#8BBBE1;
+@themeColor3: #f0f2f5;
+@themeColorErr: #fb6155;
+@themeColorSuccess: #228e33;
+.panel{
+  background: #fff;
+  padding: 25rpx;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  transition: 0.2s;
+  .panel_title{
+    color: @themeColor;
+    font-size: 28rpx;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+  }
+}
+.panel:first-child{
+  margin-top: 0px;
+}
+.err{
+  background: @themeColorErr;
+  text-align: center;
+  .panel_title{
+    color: #fff;
+
+  }
+}
+.success{
+  background: @themeColorSuccess;
+  text-align: center;
+  .panel_title{
+    color: #fff;
+
+  }
+}
+
+.onTap:active{
+  transform: scale(0.95);
+}

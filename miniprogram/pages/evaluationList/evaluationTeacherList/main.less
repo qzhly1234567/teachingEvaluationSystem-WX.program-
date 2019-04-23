@@ -1,0 +1,54 @@
+@import "../../../app";
+
+page{
+  width: 100%;
+  height: 100%;
+  .cont{
+    width: 100%;
+    height: 100%;
+    background: @themeColor3;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    padding-top: 20rpx;
+    .panel{
+      padding: 30rpx;
+      display: flex;
+      align-items: center;
+      position: relative;
+      image{
+        width: 100rpx;
+        height: 100rpx;
+        border-radius: 50%;
+        margin-right: 30rpx;
+      }
+      .info{
+        text{
+          display: block;
+          font-size: 30rpx;
+          color: #666;
+        }
+        text:last-child{
+          color: #999;
+        }
+        .noEvaluation{
+          color: @themeColorErr!important;
+        }
+        .alreadyEvaluation{
+          color: @themeColorSuccess!important;
+        }
+      }
+      .more{
+        width: 50rpx;
+        height: 50rpx;
+        position: absolute;
+        right: 30rpx;
+        margin-right: 0;
+      }
+
+    }
+    .success{
+      margin-top: 20rpx;
+    }
+  }
+}
+

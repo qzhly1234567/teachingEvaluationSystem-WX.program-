@@ -1,0 +1,21 @@
+<view class="cont">
+    <!--课程表-->
+    <CSCard wx:if="{{userInfoData.classId}}" classId="{{userInfoData.classId}}"></CSCard>
+    <view class="panel onTap" bindtap="to" data-path="/pages/studentPersonAchievement/main">
+        <view class="panel_title">
+            成绩查询
+        </view>
+    </view>
+    <view class="panel onTap" bindtap="to" data-path="/pages/teacherList/main">
+        <view class="panel_title">
+            任课教师
+        </view>
+    </view>
+    <view class="panel onTap" bindtap="to" data-path="/pages/evaluationList/main">
+        <view class="panel_title">
+            评教
+        </view>
+    </view>
+</view>
+
+

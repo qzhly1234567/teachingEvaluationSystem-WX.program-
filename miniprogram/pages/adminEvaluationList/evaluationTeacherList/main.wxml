@@ -1,0 +1,10 @@
+<view class="cont">
+    <view class="panel" wx:for="{{teachersList}}" wx:key="{{index}}" bindtap="to"  data-path="/pages/adminEvaluationList/evaluationTeacherList/studentList/main?id={{evaluationOfTeachingData._id}}&tId={{item.number}}">
+        <image src="{{item.avatar}}"></image>
+        <div class="info">
+            <text>{{item.nickName}} {{item.position}}</text>
+        </div>
+        <image class="more" src="/static/images/right.png" alt=""></image>
+    </view>
+</view>
+

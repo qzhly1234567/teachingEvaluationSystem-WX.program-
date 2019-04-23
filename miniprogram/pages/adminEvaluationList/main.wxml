@@ -1,0 +1,7 @@
+<view class="cont">
+    <view class="panel" wx:for="{{evaluationOfTeachingData}}" wx:key="{{index}}" bindtap="to" data-id="{{item._id}}" data-path="/pages/adminEvaluationList/evaluationTeacherList/main?id={{item._id}}">
+        <view class="panel_title">{{item.startDate}}年评教</view>
+        <image class="more" src="/static/images/right.png" alt=""></image>
+    </view>
+</view>
+

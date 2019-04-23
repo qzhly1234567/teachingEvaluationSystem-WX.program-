@@ -1,0 +1,21 @@
+<view class="cont">
+    <view class="panel">
+        <view class="item">
+            <text class="key">姓名</text>
+            <text class="value">{{userInfoData.nickName}}</text>
+        </view>
+        <view class="item">
+            <text class="key">年龄</text>
+            <text class="value">{{userInfoData.age}}</text>
+        </view>
+        <view class="item">
+            <text class="key">学号</text>
+            <text class="value">{{userInfoData.stNumber}}</text>
+        </view>
+        <view class="item">
+            <text class="key">班级</text>
+            <text class="value" wx:key="{{index}}"  wx:for="{{class}}" wx:if="{{item.cId==userInfoData.classId}}">{{item.name}}</text>
+        </view>
+    </view>
+
+</view>

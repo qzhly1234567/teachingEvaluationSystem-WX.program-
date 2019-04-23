@@ -1,0 +1,17 @@
+<view class="Tab">
+    <swiper
+            autoplay="{{true}}"
+            circular="{{true}}"
+            display-multiple-items="2"
+    >
+        <block wx:for="{{tabList}}" wx:key="{{index}}">
+            <swiper-item>
+                <i-icon type="integral" size="20" color="#ffffff" />
+                <text>{{item.name}}</text>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+
+
+

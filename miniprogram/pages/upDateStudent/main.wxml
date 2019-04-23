@@ -1,0 +1,38 @@
+<view class="cont">
+    <view class="panel">
+        <view class="item" bindtap="bindAvatar">
+            <text class="key">头像</text>
+            <image class="avatar" src="{{userInfoData.avatar?userInfoData.avatar:'cloud://base--9a2dfb.6261-base--9a2dfb/avatar/avatar.jpg'}}"></image>
+        </view>
+        <view class="item" >
+            <text class="key">姓名</text>
+            <input type="text" class="value" placeholder-style="color:#8BBBE1" placeholder-class="input-placeholder" bindinput="bindInputNickName" placeholder="请填写姓名" value="{{userInfoData.nickName}}"/>
+        </view>
+        <view class="item" >
+            <text class="key">邮箱</text>
+            <input type="text" class="value" placeholder-style="color:#8BBBE1" placeholder-class="input-placeholder" bindinput="bindInputMail" placeholder="请填写姓名" value="{{userInfoData.mail}}"/>
+        </view>
+        <picker class="item"  bindchange="bindPickerAge" range="{{age}}">
+            <text class="key">年龄</text>
+            <text class="value">{{userInfoData.age?userInfoData.age+'岁':'请选择年龄'}}</text>
+            <image src="/static/images/right.png"></image>
+        </picker>
+        <picker class="item" bindchange="bindPickerSex" range="{{sex}}">
+            <text class="key">性别</text>
+            <text class="value">{{userInfoData.sex?userInfoData.sex:'请选择性别'}}</text>
+            <image src="/static/images/right.png"></image>
+        </picker>
+        <picker class="item" bindchange="bindPickerClass" range="{{class}}" range-key="name">
+            <text class="key">班级</text>
+            <text class="value" wx:key="{{index}}"  wx:for="{{class}}" wx:if="{{item.cId==userInfoData.classId}}">{{item.name}}</text>
+            <text class="value" wx:if="{{userInfoData.classId==null}}">请选择班级</text>
+            <image src="/static/images/right.png"></image>
+        </picker>
+    </view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}"></picker>
+    <view class="panel success onTap" bindtap="submit">
+        <view class="panel_title">
+            保存
+        </view>
+    </view>
+</view>

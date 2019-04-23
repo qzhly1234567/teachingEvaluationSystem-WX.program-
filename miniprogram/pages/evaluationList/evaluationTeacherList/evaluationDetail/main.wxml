@@ -1,0 +1,43 @@
+<view class="cont">
+    <view class="studentInfo">
+        <image src="{{teacheInfo.avatar}}"></image>
+        <view class="info">
+            <text>{{teacheInfo.nickName}}</text>
+            <text>{{teacheInfo.position}}</text>
+        </view>
+    </view>
+    <view class="info">
+        <view class="panel">
+            <view class="panel_title">*请客观的根据实际情况进行选择</view>
+            <view class="msg">A=非常好</view>
+            <view class="msg">B=好</view>
+            <view class="msg">C=一般</view>
+            <view class="msg">D=不好</view>
+            <view class="msg">E=非常不好</view>
+        </view>
+        <view class="panel">
+            <!---->
+
+            <view class="item" wx:for="{{evaluationForm}}" wx:key="{{index}}">
+                <view class="title">{{index+1}}、{{item.name}}</view>
+                <view class="option">
+                    <radio-group class="radio-group" bindchange="radioChange" data-id="{{index}}">
+                        <label class="radio" wx:for="{{items}}" wx:for-index="i" wx:key="{{items.name}}">
+                            <radio value="{{item.name}}" disabled="{{options.type=='true'?true:''}}" checked="{{parameterData[index]==item.name}}" color="#0086F1" />
+                            {{item.value}}
+                        </label>
+                    </radio-group>
+                </view>
+            </view>
+
+        </view>
+
+
+        <view class="panel onTap success" bindtap="submit">
+            <view class="panel_title">
+                提交
+            </view>
+
+        </view>
+    </view>
+</view>

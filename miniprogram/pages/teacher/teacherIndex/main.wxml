@@ -1,0 +1,9 @@
+<view class="cont">
+    <view class="panel onTap" bindtap="to" data-path="/pages/evaluationList/main?type=teacher">
+        <view class="panel_title">
+            评教
+        </view>
+    </view>
+</view>
+
+
